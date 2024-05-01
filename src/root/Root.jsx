@@ -3,6 +3,7 @@ import { Header } from "../ui/Header";
 import { MainInformation } from "../features/MainInformation";
 import { ExperienceBanner } from "../features/ExperienceBanner";
 import { AboutMe } from "../features/AboutMe";
+import { Portafolio } from "../features/Portafolio";
 
 export const Root = () => {
   return (
@@ -11,6 +12,7 @@ export const Root = () => {
         <Header />
         <MainInformation />
         <AboutMe />
+        <Portafolio />
       </div>
     </>
   );
