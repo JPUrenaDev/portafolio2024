@@ -28,7 +28,7 @@ export const Header = () => {
           <FcCommandLine size={30} />
         </Animation>
         <Link className="  text-white sm:text-[20px] ml-[10px] text-[20px] font-extralight font-Pacifico hover:bg-orange-600  ">
-          Jean Urenas
+          Jean Urena
         </Link>
       </div>
 

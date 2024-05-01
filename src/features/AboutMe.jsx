@@ -2,10 +2,10 @@ import React from "react";
 
 export const AboutMe = () => {
   return (
-    <article className="text-white  ml-4 flex  w-[700px]">
+    <article className="text-white   mt-4 flex   w-full h-full items-center ">
       <img
         src="./images/wp4445835.jpg"
-        className=" w-[100%]   object-cover"
+        className=" h-full object-cover w-full"
       ></img>
       <div>
         {" "}

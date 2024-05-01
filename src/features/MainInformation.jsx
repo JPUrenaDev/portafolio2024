@@ -5,9 +5,9 @@ export const MainInformation = () => {
   return (
     <article
       id="mainInformation"
-      className="sm:flex sm:items-center md:flex-row flex-col  mt-[100px] w-[100%]   justify-around "
+      className=" flex items-center mt-[100px] w-full m-auto pl-[90px] justify-between "
     >
-      <div className="ml-[100px] w-full h-full">
+      <div className="w-[700px] h-full  ">
         <h3 className="text-white bg-red-600 mb-4 p-2 flex justify-center w-[100px]">
           <label>Hello I am</label>
         </h3>
@@ -23,7 +23,7 @@ export const MainInformation = () => {
             My Work
           </button>
         </div>
-        <div className="flex items-center  gap-5 ">
+        <div className="flex items-center  gap-5">
           <div className="flex items-center gap-3">
             <MdOutlinePhoneAndroid color="red" />
             <h6 className="text-white">+1(849)-639-0454</h6>
@@ -37,7 +37,7 @@ export const MainInformation = () => {
 
       <img
         src="./images/wp4445835.jpg"
-        className=" object-cover h-[100%] w-[400px]"
+        className=" object-cover h-full w-[600px]"
       ></img>
     </article>
   );
