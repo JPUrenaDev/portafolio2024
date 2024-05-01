@@ -1,18 +1,22 @@
 import React from "react";
 import { MdOutlinePhoneAndroid } from "react-icons/md";
 import { MdOutlineMail } from "react-icons/md";
+import { LinkWithHover } from "../helper/LinkWithHover";
+
 export const MainInformation = () => {
   return (
     <article
       id="mainInformation"
-      className=" flex items-center mt-[100px] w-full m-auto pl-[90px] justify-between "
+      className=" flex items-center mt-[100px] w-full justify-evenly font-Roboto "
     >
-      <div className="w-[700px] h-full  ">
-        <h3 className="text-white bg-red-600 mb-4 p-2 flex justify-center w-[100px]">
-          <label>Hello I am</label>
+      <div className="w-[700px]   ">
+        <h3 className="text-white bg-red-600 mb-4 p-2 flex justify-center w-[150px] tracking-wide">
+          <LinkWithHover>Hello I am</LinkWithHover>
         </h3>
-        <h1 className="text-white text-[40px] font-bold">Mr. Jean Urena</h1>
-        <h4 className="text-white mt-3 mb-5">
+        <h1 className="text-white text-[40px] font-bold font-Oswald">
+          Mr. Jean Urena
+        </h1>
+        <h4 className="text-white mt-3 mb-5 ">
           A Professional Web Developer and UI/UX Designer
         </h4>
         <div className="flex gap-4 items-center  mb-6 ">

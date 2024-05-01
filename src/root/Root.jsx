@@ -7,7 +7,7 @@ import { AboutMe } from "../features/AboutMe";
 export const Root = () => {
   return (
     <>
-      <div className="bg-black scroll-smooth h-full w-full">
+      <div className="scroll-smooth">
         <Header />
         <MainInformation />
         <AboutMe />

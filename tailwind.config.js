@@ -1,17 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  theme: {
-    theme: {
-      fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-        Pacifico: ["Pacifico", "sans-serif"],
-      },
-      screens: {
-        mm: "640px",
-      },
-    },
 
-    plugins: [],
+  theme: {
+    fontFamily: {
+      Roboto: "Roboto Mono, monospace",
+      Oswald: "Oswald",
+    },
+    screens: {
+      mm: "640px",
+    },
   },
+
+  plugins: [],
 };

@@ -1,12 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
 @layer base {
   html,
   body {
-    font-family: Pacifico, system-ui sans-serif;
     height: 100vh;
   }
 
@@ -22,4 +20,8 @@
 }
 
 #root {
+}
+
+body {
+  background-color: black;
 }
