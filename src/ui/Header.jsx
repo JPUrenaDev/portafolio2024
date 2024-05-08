@@ -23,8 +23,8 @@ const Link = styled(HashLink)`
 export const Header = () => {
   const [showMenuOnMobile, setShowMenuOnMobile] = useState(false);
   return (
-    <div className="flex justify-around pt-3   px-3  flex-wrap flex-row items-center font-Roboto    bg-gray-900 sm:bg-transparent h-[80px] ">
-      <div className="flex items-center">
+    <div className="sm:visible flex justify-around pt-3    px-3  flex-wrap flex-row items-center font-Roboto bg-gray-900  h-[80px] ">
+      <div className="flex items-center ">
         <Animation>
           <FcCommandLine size={30} />
         </Animation>
@@ -35,7 +35,7 @@ export const Header = () => {
 
       <DropDownMenu />
 
-      <nav className="flex items-center sm:gap-[50px] visible   text-white sm:flex-row  mb-0  text-[13px] ">
+      <nav className="flex items-center sm:gap-[50px]   text-white sm:flex-row  mb-0  text-[13px] sm:visible invisible ">
         <Link className="hover:bg-orange-600" to={"#mainInformation"}>
           Home
         </Link>

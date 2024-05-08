@@ -16,7 +16,7 @@ export function DropDownMenu() {
   return (
     <Menu
       as="div"
-      className="relative inline-block text-left sm:invisible visited:"
+      className="relative inline-block text-left sm:invisible visited sm:bg-black "
     >
       <div>
         <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md  px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm  ring-inset  ">
