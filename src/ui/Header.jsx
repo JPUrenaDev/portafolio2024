@@ -1,13 +1,10 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { Button } from "./Button";
 import styled from "styled-components";
-import { CiMenuBurger } from "react-icons/ci";
+
 import { DropDownMenu } from "./DropDownMenu";
 import { FcCommandLine } from "react-icons/fc";
 import { Animation } from "../helper/Animation";
-import { LinkWithHover } from "../helper/LinkWithHover";
 
 const Link = styled(HashLink)`
   border: 2px solid transparent;
@@ -21,7 +18,6 @@ const Link = styled(HashLink)`
 `;
 
 export const Header = () => {
-  const [showMenuOnMobile, setShowMenuOnMobile] = useState(false);
   return (
     <div className="sm:visible flex justify-around pt-3    px-3  flex-wrap flex-row items-center font-Roboto bg-gray-900  h-[80px] ">
       <div className="flex items-center ">

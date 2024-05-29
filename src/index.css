@@ -22,5 +22,6 @@
 body,
 html {
   background-color: black;
+
   scrollbar-color: rgb(255, 255, 255) rgb(250, 6, 6);
 }

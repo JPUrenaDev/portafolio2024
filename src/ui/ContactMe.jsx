@@ -19,7 +19,7 @@ export const ContactMe = () => {
           ></path>
         </svg>
       </a>
-      <a class="social-link2">
+      <a class="social-link2" href="https://github.com/JPUrenaDev">
         <svg
           viewBox="0 0 496 512"
           height="1em"
@@ -45,7 +45,10 @@ export const ContactMe = () => {
           ></path>
         </svg>
       </a>
-      <a class="social-link4">
+      <a
+        class="social-link4"
+        href="https://www.linkedin.com/in/jean-ure%C3%B1a-b57715a5/"
+      >
         <svg
           fill="#fff"
           viewBox="0 0 448 512"

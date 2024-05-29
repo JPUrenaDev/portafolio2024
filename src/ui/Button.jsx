@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Button = ({ children, textColor, mobile = false }) => {
+export const Button = ({ children, mobile = false }) => {
   return (
     <button
       type="button"

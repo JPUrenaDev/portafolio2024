@@ -1,5 +1,5 @@
 import React from "react";
-import { LinkWithHover } from "../helper/LinkWithHover";
+
 import { Tooltip } from "react-tooltip";
 export const AboutMe = () => {
   return (
@@ -49,7 +49,7 @@ export const AboutMe = () => {
           data-tooltip-id="my-tooltip"
           data-tooltip-place="bottom"
           data-tooltip-content={"Tailwind"}
-          className="sm:w-[40px]  sm:right-[190px] sm:top-[469px] absolute sm:absolute sm:max-w-xs sm:transition sm:duration-300 sm:ease-in-out sm:hover:scale-110 left-[300px] w-[30px] buttom-[0px] top-[600px] "
+          className="sm:w-[40px]  sm:right-[190px] sm:top-[469px] absolute sm:absolute sm:max-w-xs sm:transition sm:duration-300 sm:ease-in-out sm:hover:scale-110 sm:left-[160px] w-[30px] buttom-[0px] top-[600px] "
         ></img>
         <img
           src="./images/node-js-icon-454x512-nztofx17.png"

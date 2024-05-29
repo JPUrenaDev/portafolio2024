@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useSearchParams } from "react-router-dom";
-import { PiArrowSquareUpRightFill } from "react-icons/pi";
+
 import { ProfileCardDesign } from "../ui/ProfileCardDesign";
 
 export const Portafolio = () => {
-  const [projects, setProjects] = useState([
+  const [projects] = useState([
     {
       id: 1,
       projectName: "WebApp",
@@ -100,7 +100,7 @@ export const Portafolio = () => {
       </div>
 
       <article className="mt-[50px] ml-4 flex gap-4 items-center justify-evenly flex-wrap">
-        {filteredProject.map((value, key) => {
+        {filteredProject.map((value) => {
           return (
             <ProfileCardDesign projectInformation={value} />
             // <div

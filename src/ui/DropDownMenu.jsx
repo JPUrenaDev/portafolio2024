@@ -1,6 +1,6 @@
 import { Fragment, useState } from "react";
 import { Menu, Transition } from "@headlessui/react";
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
+
 import { CiMenuBurger } from "react-icons/ci";
 import { HashLink } from "react-router-hash-link";
 import styled from "styled-components";
@@ -45,7 +45,7 @@ export function DropDownMenu() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute right-0 z-10  w-screen h-screen origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black  focus:outline-none">
+        <Menu.Items className="absolute  z-10  w-screen h-screen rounded-md bg-white shadow-lg ring-1 ring-black  focus:outline-none">
           <div className="py-1 flex flex-col items-center gap-[40px] mt-4">
             <Menu.Item>
               {({ active }) => (
@@ -132,7 +132,7 @@ export function DropDownMenu() {
             </Menu.Item>
 
             <Menu.Item>
-              {({ active }) => (
+              {() => (
                 <Button
                   border-color={"bg-black"}
                   textColor={"text-black"}

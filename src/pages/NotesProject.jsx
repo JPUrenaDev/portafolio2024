@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { AnimationPhotos } from "../helper/AnimationPhotos";
 
-export const NotesProject = ({ projectInformation }) => {
+export const NotesProject = () => {
   const navigate = useNavigate();
   const goToThePreviousPage = () => {
     navigate(-1);

@@ -2,7 +2,7 @@ import React from "react";
 import { MdOutlinePhoneAndroid } from "react-icons/md";
 import { MdOutlineMail } from "react-icons/md";
 import { LinkWithHover } from "../helper/LinkWithHover";
-import { ProfileCardDesign } from "../ui/ProfileCardDesign";
+
 import { ContactMe } from "../ui/ContactMe";
 
 export const MainInformation = () => {
