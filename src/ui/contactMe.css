@@ -2,7 +2,10 @@
   display: flex;
   height: 80px;
   width: 100%;
-  margin-left: -20px;
+
+
+  
+  
 }
 
 @media (max-width: 575px) {
@@ -10,14 +13,14 @@
     display: flex;
     height: 80px;
     width: 80%;
-    margin-left: -20px;
+    margin-left: 0px;
   }
 }
 
 .contatMeCard svg {
   position: absolute;
   display: flex;
-  width: 50%;
+  width: 40%;
   height: 100%;
   font-size: 24px;
   font-weight: 700;
@@ -87,6 +90,7 @@
 .contatMeCard .social-link3:hover {
   background-color: #5865f2;
   animation: bounce_613 0.4s linear;
+
 }
 
 .contatMeCard .social-link4:hover {

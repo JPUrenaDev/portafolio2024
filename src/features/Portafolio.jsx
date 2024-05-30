@@ -3,45 +3,31 @@ import { Link } from "react-router-dom";
 import { useSearchParams } from "react-router-dom";
 
 import { ProfileCardDesign } from "../ui/ProfileCardDesign";
+import { FaGithub } from "react-icons/fa";
 
 export const Portafolio = () => {
   const [projects] = useState([
     {
       id: 1,
-      projectName: "WebApp",
+      projectName: "NoteApp",
       Link: "",
       category: "WebApp",
-      description: "loremsadddadaadsasderwerwer",
+      description: "This project is a note-taking application built with Node.js and React. Users can create, delete, and edit notes, providing a versatile platform for managing personal or professional tasks efficiently.",
       image: "./images/Screenshot 2024-05-02 074750.jpg",
-      technologies: ["Javascript", "Css", "Tailwind", "React"],
+      technologies: ["Javascript", "Css", "Tailwind", "React", 'NodeJs', 'sequelize', 'React Query', 'react hook'],
+      gitHub:<Link to={'https://github.com/JPUrenaDev/noteApp'}><FaGithub size={40} color="red"/></Link>
     },
     {
       id: 4,
-      projectName: "prueba",
+      projectName: "Calendar",
       Link: "",
-      category: "MobileApp",
-      description: "loremsadddadaadsasderwerwer",
-      image: "./images/Screenshot 2024-05-02 074750.jpg",
+      category: "WebApp",
+      description: "The calendar project is a web application that allows users to add, edit, and delete events on specific days of the calendar. It provides an intuitive interface for managing events efficiently, ensuring users can easily visualize and organize their schedules.",
+      image: "./images/Screenshot 2024-05-30 082759.png",
       technologies: ["Javascript", "Css", "Tailwind", "React"],
+      gitHub:<Link to={'https://github.com/JPUrenaDev/calendarApp'}><FaGithub size={40} color="red"/></Link>
     },
-    {
-      id: 2,
-      projectName: "Mobile App",
-      Link: "",
-      category: "MobileApp",
-      description: "loremsadddadaadsasderwerwer",
-      image: "./images/Screenshot 2024-05-02 074750.jpg",
-      technologies: ["Javascript", "Css", "Tailwind", "React"],
-    },
-    {
-      id: 3,
-      projectName: "Test",
-      Link: "",
-      category: "test",
-      description: "loremsadddadaadsasderwerwer",
-      image: "./images/Screenshot 2024-05-02 074750.jpg",
-      technologies: ["Javascript", "Css", "Tailwind", "React"],
-    },
+    
   ]);
   const [searchParams, setSearchParams] = useSearchParams();
 
@@ -64,12 +50,12 @@ export const Portafolio = () => {
         PORTAFOLIO
       </h1>
 
-      <div className="flex sm:gap-[80px]  sm:justify-center justify-between">
+      <div className="flex sm:gap-[80px] gap-4 sm:mx-0 sm:px-0 px-3  sm:justify-center justify-between">
         <Link
           onClick={() => {
             FilterCategory("All");
           }}
-          className="h-[40px] sm:w-[120px] text-white rounded flex justify-center items-center px-3 bg-stone-800 hover:bg-orange-600 "
+          className="h-[40px] w-[130px] sm:w-[120px] sm:p-0  text-white rounded flex justify-center items-center  bg-stone-800 hover:bg-orange-600 "
         >
           All
         </Link>
@@ -77,7 +63,7 @@ export const Portafolio = () => {
           onClick={() => {
             FilterCategory("WebApp");
           }}
-          className="h-[40px] sm:w-[120px] text-white rounded flex justify-center items-center  bg-stone-800 hover:bg-orange-600  "
+          className="h-[40px] w-[130px] sm:w-[120px] text-white rounded flex justify-center items-center  bg-stone-800 hover:bg-orange-600  "
         >
           Web App
         </Link>
@@ -85,41 +71,24 @@ export const Portafolio = () => {
           onClick={() => {
             FilterCategory("MobileApp");
           }}
-          className="h-[40px] sm:w-[120px] text-white rounded flex justify-center items-center  bg-stone-800 hover:bg-orange-600 "
+          className="h-[40px] w-[130px] sm:w-[120px] text-white rounded flex justify-center items-center  bg-stone-800 hover:bg-orange-600 "
         >
           Mobile App
         </Link>
-        <Link
-          onClick={() => {
-            FilterCategory("Test");
-          }}
-          className="h-[40px] sm:w-[120px] text-white rounded flex justify-center items-center  bg-stone-800 hover:bg-orange-600 "
-        >
-          Test
-        </Link>
+      
       </div>
-
+{
+          console.log(category)}
       <article className="mt-[50px] ml-4 flex gap-4 items-center justify-evenly flex-wrap">
-        {filteredProject.map((value) => {
+        {category=='MobileApp' ? <h1 className="text-white">Ops, coming soon</h1>:  filteredProject.map((value) => {
           return (
+
             <ProfileCardDesign projectInformation={value} />
-            // <div
-            //   key={key}
-            //   className="h-[300px] w-[320px] text-white rounded flex justify-center items-center  bg-stone-800 flex-col "
-            // >
-            //   <img className="h-full w-full object-fit" src={value.image}></img>
-
-            //   <Link to={"NoteApp"} className="w-full mt-8 px-3">
-            //     <h2 className="font-bold">{value.projectName}</h2>
-
-            //     <p className="font-thin">{value.description}</p>
-            //     <div className="flex items-center justify-between mt-4 font-thin">
-            //       <h4>View more details: </h4> <PiArrowSquareUpRightFill />
-            //     </div>
-            //   </Link>
-            // </div>
+           
+       
           );
         })}
+       
       </article>
     </div>
   );

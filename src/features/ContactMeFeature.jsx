@@ -7,7 +7,7 @@ export const ContactMeFeature = () => {
         Contact Me
       </h1>
 
-      <div className="w-[500px] mx-auto">
+      <div className="w-full flex ml-[40px] sm:w-[500px] sm:mx-auto" >
         <ContactMe />
       </div>
     </div>

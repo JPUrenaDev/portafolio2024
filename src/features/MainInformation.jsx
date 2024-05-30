@@ -2,6 +2,7 @@ import React from "react";
 import { MdOutlinePhoneAndroid } from "react-icons/md";
 import { MdOutlineMail } from "react-icons/md";
 import { LinkWithHover } from "../helper/LinkWithHover";
+import { Link } from "react-router-dom";
 
 import { ContactMe } from "../ui/ContactMe";
 
@@ -10,7 +11,7 @@ export const MainInformation = () => {
     <>
       <article
         id="mainInformation"
-        className=" sm:flex sm:items-center sm:mt-[100px] mt-[50px]  sm:w-full sm:justify-evenly font-Roboto sm:ml-0 ml-3 "
+        className=" sm:flex sm:items-center sm:mt-[100px] mt-[50px]  sm:w-full sm:justify-evenly font-Roboto sm:ml-3 ml-3 "
       >
         <div className="sm:w-[700px]  w-full ">
           <h3 className=" text-black sm:text-white bg-red-600 mb-4 sm:p-2 flex justify-center w-[150px] tracking-wide">
@@ -23,9 +24,9 @@ export const MainInformation = () => {
             A Professional Web Developer and UI/UX Designer
           </h4>
           <div className="flex gap-4 items-center  mb-6 ">
-            <button className="bg-orange-600 p-3 rounded text-white">
+            <Link to={'/files/Resume Jean Urena Developer.pdf'}  target='_blank' download={true} className="bg-orange-600 p-3 rounded text-white">
               Download CV
-            </button>
+            </Link>
             <button className="text-white border-white border p-3 px-6 rounded">
               My Work
             </button>
@@ -40,7 +41,7 @@ export const MainInformation = () => {
               <h6 className="text-white">jeanua8@gmail.com</h6>
             </div>
           </div>
-          <div className="sm:w-[400px] w-[90%] ">
+          <div className=" sm:w-[400px]  flex justify-center">
             <ContactMe />
           </div>
         </div>

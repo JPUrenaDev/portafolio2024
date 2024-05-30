@@ -8,7 +8,7 @@ import { ContactMeFeature } from "../features/ContactMeFeature";
 export const Root = () => {
   return (
     <>
-      <div className="scroll-smooth p-0 sm:p-0">
+      <div className="scroll-smooth p-0 sm:p-0 px-auto">
         <Header />
         <MainInformation />
         <AboutMe />

@@ -16,12 +16,13 @@ export function DropDownMenu() {
   return (
     <Menu
       as="div"
-      className="relative inline-block text-left sm:invisible visited sm:bg-black "
+      className="absolute text-left sm:invisible visited sm:bg-black w-full"
     >
       <div>
-        <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md  px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm  ring-inset  ">
+        <Menu.Button className="inline-flex flex  w-full justify-end pr-[30px] gap-x-1.5 rounded-md  px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm  ring-inset  ">
           {toggleMenu ? (
             <IoClose
+            className=""
               size={30}
               color="white"
               onClick={() => setToggleMenu(!toggleMenu)}
@@ -45,7 +46,7 @@ export function DropDownMenu() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute  z-10  w-screen h-screen rounded-md bg-white shadow-lg ring-1 ring-black  focus:outline-none">
+        <Menu.Items className="z-10 absolute  w-full h-screen rounded-md bg-white ml-[-12px] shadow-lg ring-1 ring-black  focus:outline-none">
           <div className="py-1 flex flex-col items-center gap-[40px] mt-4">
             <Menu.Item>
               {({ active }) => (

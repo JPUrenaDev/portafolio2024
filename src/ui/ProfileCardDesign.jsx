@@ -1,5 +1,6 @@
 import React from "react";
 import "../ui/ProfileCardDesign.css";
+import { Link } from "react-router-dom";
 export const ProfileCardDesign = ({ projectInformation }) => {
   return (
     <div className="font-Roboto mb-5">
@@ -8,16 +9,15 @@ export const ProfileCardDesign = ({ projectInformation }) => {
           <div class="">
             <div class="back-content w-full">
               <img
-                src="./images/Screenshot 2024-05-02 074750.jpg"
+                src={projectInformation.image}
                 alt=""
                 className="rounded-t-lg"
               />
               <strong className="font-Roboto text-center mt-5  w-full block mb-4 ">
                 {projectInformation?.projectName}
               </strong>
-              <p className="text-[13px] text-center px-1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
-                blanditiis
+              <p className="text-[13px] text-center px-1 text-justify px-2">
+                {projectInformation.description}
               </p>
             </div>
           </div>
@@ -68,6 +68,14 @@ export const ProfileCardDesign = ({ projectInformation }) => {
                       {projectInformation.technologies.map((value) => (
                         <li className="text-white">{value}</li>
                       ))}
+
+<div className="mt-4">
+
+  {projectInformation.gitHub}
+
+
+</div>
+                   
                     </ul>
                   </p>
                 </div>

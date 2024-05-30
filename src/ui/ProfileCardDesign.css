@@ -1,7 +1,7 @@
 .card {
   overflow: visible;
   width: 300px;
-  height: 300px;
+  height: 390px;
 
   border-radius: 10px;
 }
@@ -9,8 +9,8 @@
 @media (max-width: 575px) {
   .card {
     overflow: visible;
-    width: 100px;
-    height: 300px;
+    width: 300px;
+    height: 390px;
 
     border-radius: 10px;
   }
