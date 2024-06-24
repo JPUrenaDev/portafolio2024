@@ -24,7 +24,12 @@ export const MainInformation = () => {
             A Professional Web Developer and UI/UX Designer
           </h4>
           <div className="flex gap-4 items-center  mb-6 ">
-            <Link to={'/files/Resume Jean Urena Developer.pdf'}  target='_blank' download={true} className="bg-orange-600 p-3 rounded text-white">
+            <Link
+              to={"/files/Resume Jean Urena Developer.pdf"}
+              target="_blank"
+              download={true}
+              className="bg-orange-600 p-3 rounded text-white"
+            >
               Download CV
             </Link>
             <button className="text-white border-white border p-3 px-6 rounded">
@@ -41,7 +46,7 @@ export const MainInformation = () => {
               <h6 className="text-white">jeanua8@gmail.com</h6>
             </div>
           </div>
-          <div className=" sm:w-[400px]  flex justify-center">
+          <div className=" sm:w-[400px] ml-[-34px] flex justify-center">
             <ContactMe />
           </div>
         </div>

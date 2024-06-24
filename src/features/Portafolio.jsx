@@ -12,22 +12,55 @@ export const Portafolio = () => {
       projectName: "NoteApp",
       Link: "",
       category: "WebApp",
-      description: "This project is a note-taking application built with Node.js and React. Users can create, delete, and edit notes, providing a versatile platform for managing personal or professional tasks efficiently.",
+      description:
+        "This project is a note-taking application built with Node.js and React. Users can create, delete, and edit notes, providing a versatile platform for managing personal or professional tasks efficiently.",
       image: "./images/Screenshot 2024-05-02 074750.jpg",
-      technologies: ["Javascript", "Css", "Tailwind", "React", 'NodeJs', 'sequelize', 'React Query', 'react hook'],
-      gitHub:<Link to={'https://github.com/JPUrenaDev/noteApp'}><FaGithub size={40} color="red"/></Link>
+      technologies: [
+        "Javascript",
+        "Css",
+        "Tailwind",
+        "React",
+        "NodeJs",
+        "sequelize",
+        "React Query",
+        "react hook",
+      ],
+      gitHub: (
+        <Link to={"https://github.com/JPUrenaDev/noteApp"}>
+          <FaGithub size={40} color="red" />
+        </Link>
+      ),
+    },
+    {
+      id: 2,
+      projectName: "GLPI Api Integration",
+      Link: "",
+      category: "WebApp",
+      description:
+        "This project integrates the GLPI API with Express.js and SQL Server for nationwide ambulance status monitoring in the healthcare sector. It enables efficient management and synchronization of IT assets and service tickets, ensuring secure data handling and enhanced functionality across the country.",
+      image: "./images/Screenshot 2024-06-24 131854.jpg",
+      technologies: ["SQL Server", "NodeJS", "Express"],
+      gitHub: (
+        <Link to={"https://github.com/JPUrenaDev/glpi-external-api2"}>
+          <FaGithub size={40} color="red" />
+        </Link>
+      ),
     },
     {
       id: 4,
       projectName: "Calendar",
       Link: "",
       category: "WebApp",
-      description: "The calendar project is a web application that allows users to add, edit, and delete events on specific days of the calendar. It provides an intuitive interface for managing events efficiently, ensuring users can easily visualize and organize their schedules.",
+      description:
+        "The calendar project is a web application that allows users to add, edit, and delete events on specific days of the calendar. It provides an intuitive interface for managing events efficiently, ensuring users can easily visualize and organize their schedules.",
       image: "./images/Screenshot 2024-05-30 082759.png",
       technologies: ["Javascript", "Css", "Tailwind", "React"],
-      gitHub:<Link to={'https://github.com/JPUrenaDev/calendarApp'}><FaGithub size={40} color="red"/></Link>
+      gitHub: (
+        <Link to={"https://github.com/JPUrenaDev/calendarApp"}>
+          <FaGithub size={40} color="red" />
+        </Link>
+      ),
     },
-    
   ]);
   const [searchParams, setSearchParams] = useSearchParams();
 
@@ -75,20 +108,16 @@ export const Portafolio = () => {
         >
           Mobile App
         </Link>
-      
       </div>
-{
-          console.log(category)}
-      <article className="mt-[50px] ml-4 flex gap-4 items-center justify-evenly flex-wrap">
-        {category=='MobileApp' ? <h1 className="text-white">Ops, coming soon</h1>:  filteredProject.map((value) => {
-          return (
 
-            <ProfileCardDesign projectInformation={value} />
-           
-       
-          );
-        })}
-       
+      <article className="mt-[50px] ml-4 flex gap-4 items-center justify-evenly flex-wrap">
+        {category == "MobileApp" ? (
+          <h1 className="text-white">Ops, coming soon</h1>
+        ) : (
+          filteredProject.map((value) => {
+            return <ProfileCardDesign projectInformation={value} />;
+          })
+        )}
       </article>
     </div>
   );

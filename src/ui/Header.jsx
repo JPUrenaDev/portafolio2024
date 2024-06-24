@@ -19,7 +19,7 @@ const Link = styled(HashLink)`
 
 export const Header = () => {
   return (
-    <div className=" sm:flex sm:justify-around   px-3   w-full  font-Roboto bg-gray-900  h-full py-4 w-full">
+    <div className=" sm:flex sm:justify-around    px-3     font-Roboto bg-gray-900  h-full py-4 w-full">
       <div className="flex items-center ">
         <Animation>
           <FcCommandLine size={30} />
@@ -27,13 +27,9 @@ export const Header = () => {
         <Link className="  text-white  ml-[10px] text-[20px] font-extralight  hover:bg-orange-600  ">
           Jean Urena
         </Link>
-   
-        <DropDownMenu />
- 
-  
-      </div>
 
-  
+        <DropDownMenu />
+      </div>
 
       <nav className="sm:flex items-center sm:gap-[50px]   text-white sm:flex-row  mb-0  text-[13px]  hidden py-4">
         <Link className="hover:bg-orange-600" to={"#mainInformation"}>
@@ -49,7 +45,7 @@ export const Header = () => {
         <Link className="hover:bg-orange-600" to={"#portafolio"}>
           Portafolio
         </Link>
-        <Link className="hover:bg-orange-600" to={"#contact"}>
+        <Link className="hover:bg-orange-600" to={"#mainInformation"}>
           Contact
         </Link>
         <Link className="hover:bg-orange-600" to={"#blog"}>
