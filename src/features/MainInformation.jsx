@@ -14,7 +14,7 @@ export const MainInformation = () => {
         className=" sm:flex sm:items-center sm:mt-[100px] mt-[50px]  sm:w-full sm:justify-evenly font-Roboto sm:ml-3 ml-3 "
       >
         <div className="sm:w-[700px]  w-full ">
-          <h3 className=" text-black sm:text-white bg-red-600 mb-4 sm:p-2 flex justify-center w-[150px] tracking-wide">
+          <h3 className=" text-black sm:text-white bg-red-600 mb-4 sm:p-2 flex justify-center w-[150px] rounded-md tracking-wide">
             <LinkWithHover>Hello I am</LinkWithHover>
           </h3>
           <h1 className="text-white text-[40px] font-bold font-Oswald">

@@ -24,7 +24,7 @@ export const Header = () => {
         <Animation>
           <FcCommandLine size={30} />
         </Animation>
-        <Link className="  text-white  ml-[10px] text-[20px] font-extralight  hover:bg-orange-600  ">
+        <Link className="  text-white  ml-[10px] text-[20px] font-extralight rounded-md hover:bg-orange-600  ">
           Jean Urena
         </Link>
 
@@ -32,23 +32,29 @@ export const Header = () => {
       </div>
 
       <nav className="sm:flex items-center sm:gap-[50px]   text-white sm:flex-row  mb-0  text-[13px]  hidden py-4">
-        <Link className="hover:bg-orange-600" to={"#mainInformation"}>
+        <Link
+          className="hover:bg-orange-600 rounded-md"
+          to={"#mainInformation"}
+        >
           Home
         </Link>
-        <Link className="hover:bg-orange-600" to={"#aboutMe"}>
+        <Link className="hover:bg-orange-600 rounded-md" to={"#aboutMe"}>
           {" "}
           About Me
         </Link>
-        <Link className="hover:bg-orange-600" to={"#myServices"}>
+        <Link className="hover:bg-orange-600 rounded-md" to={"#myServices"}>
           My Services
         </Link>
-        <Link className="hover:bg-orange-600" to={"#portafolio"}>
+        <Link className="hover:bg-orange-600 rounded-md" to={"#portafolio"}>
           Portafolio
         </Link>
-        <Link className="hover:bg-orange-600" to={"#mainInformation"}>
+        <Link
+          className="hover:bg-orange-600 rounded-md"
+          to={"#mainInformation"}
+        >
           Contact
         </Link>
-        <Link className="hover:bg-orange-600" to={"#blog"}>
+        <Link className="hover:bg-orange-600 rounded-md" to={"#blog"}>
           Blog
         </Link>
         <Button>Hire Me</Button>
