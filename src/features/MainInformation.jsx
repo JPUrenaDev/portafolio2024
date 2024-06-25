@@ -71,7 +71,7 @@ export const MainInformation = () => {
             data-tooltip-place="bottom"
             data-tooltip-content={"HTML 5"}
             src="./images/HTML5_logo_and_wordmark.svg.png "
-            className="sm:w-[40px]   sm:right-[130px]  sm:top-[450px]  absolute sm:max-w-xs  w-[30px]  top-[670px] right-[20px] sm:left-[230px] sm:transition sm:duration-300 ease-in-out hover:scale-110"
+            className="sm:w-[40px]   sm:right-[130px]  sm:top-[450px]  absolute sm:max-w-xs  w-[30px]  top-[500px] right-[10px] left-[100px] sm:left-[230px] sm:transition sm:duration-300 ease-in-out hover:scale-110"
           ></img>
           <img
             data-tooltip-id="my-tooltip"
@@ -99,14 +99,14 @@ export const MainInformation = () => {
             data-tooltip-id="my-tooltip"
             data-tooltip-place="left"
             data-tooltip-content={"NodeJS"}
-            className="sm:w-[40px]  sm:right-[340px] sm:left-3 left-[100px]  top-[700px] sm:top-[4px] sm:absolute absolute sm:max-w-xs sm:transition sm:duration-300 sm:ease-in-out sm:hover:scale-110   w-[30px]"
+            className="sm:w-[40px]  sm:right-[340px] sm:left-3 left-[350px]  top-[680px] sm:top-[4px] sm:absolute absolute sm:max-w-xs sm:transition sm:duration-300 sm:ease-in-out sm:hover:scale-110   w-[30px]"
           ></img>
           <img
             src="./images/sql-server-icon-png-1.png"
             data-tooltip-id="my-tooltip"
             data-tooltip-place="left"
             data-tooltip-content={"SQL"}
-            className="sm:w-[40px]  sm:right-[380px] sm:top-[60px] left-[300px] top-[600px] sm:absolute  absolute sm:max-w-xs sm:transition sm:duration-300 sm:ease-in-out sm:hover:scale-110  w-[30px]"
+            className="sm:w-[40px]  sm:right-[380px] sm:top-[60px] left-[350px] top-[600px] sm:absolute  absolute sm:max-w-xs sm:transition sm:duration-300 sm:ease-in-out sm:hover:scale-110  w-[30px]"
           ></img>
           <img
             src="./images/react-query-logo-1340EA4CE9-seeklogo.com.png"

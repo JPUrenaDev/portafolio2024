@@ -16,7 +16,7 @@ export const AboutMe = () => {
           <h1 className="text-orange-600  font-Roboto font-bold sm:text-[30px] sm:mb-[50px] text-center">
             BIOGRAPHY
           </h1>
-          <p className="text-justify sm:px0 mb-4 w-[70%]  mx-auto sm:mb-[80px]">
+          <p className="text-justify sm:px0 mb-4 sm:w-[70%] px-3 mx-auto sm:mb-[80px]">
             I am a systems engineer from the Dominican Republic with a passion
             for front-end development, particularly in JavaScript and React. I
             have 3 years of experience designing dynamic, responsive user
@@ -30,7 +30,7 @@ export const AboutMe = () => {
           <h1 className="text-orange-600  font-Roboto font-bold sm:text-[30px] sm:mb-[50px] text-center">
             EXPERIENCE
           </h1>
-          <p className="text-justify sm:px0 mb-4 w-[70%]  mx-auto">
+          <p className="text-justify sm:px0 mb-4 sm:w-[70%] px-3 mx-auto sm:mb-[80px]">
             I developed a full-stack notes application and a calendar project,
             highlighting my front-end and back-end development skills. With 3
             years of JavaScript experience and 5 years in database management,
