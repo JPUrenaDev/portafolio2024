@@ -21,7 +21,7 @@ export const MainInformation = () => {
             Mr. Jean Urena
           </h1>
           <h4 className="text-white mt-3 mb-5 ">
-            A Professional Web Developer and UI/UX Designer
+            A Professional Web Developer
           </h4>
           <div className="flex gap-4 items-center  mb-6 ">
             <Link
@@ -57,7 +57,7 @@ export const MainInformation = () => {
             data-tooltip-place="bottom"
             data-tooltip-content={"Jean Urena </Dev>"}
             src="./images/man-attitude-pro-9.png"
-            className="sm:object-cover relative sm:absolute sm:top-[-5px]    sm:max-h-fit  sm: sm:h-full  rounded  mx-auto sm:transition sm:duration-300 sm:ease-in-out sm:hover:scale-110  w-[screen]"
+            className="sm:object-cover relative sm:absolute sm:top-[-5px] sm:max-h-fit  sm: sm:h-full  rounded  mx-auto sm:transition sm:duration-300 sm:ease-in-out sm:hover:scale-110  sm:w-auto"
           ></img>
           <img
             data-tooltip-id="my-tooltip"
