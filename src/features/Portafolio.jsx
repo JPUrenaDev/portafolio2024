@@ -61,7 +61,33 @@ export const Portafolio = () => {
         </Link>
       ),
     },
+
+    {
+      id: 5,
+      projectName: "Ecommerce Corotos Clone",
+      Link: "",
+      category: "WebApp",
+      description:
+        "The calendar project is a web application that allows users to add, edit, and delete events on specific days of the calendar. It provides an intuitive interface for managing events efficiently, ensuring users can easily visualize and organize their schedules.",
+      image: "./images/Screenshot 2024-06-26 112013.jpg",
+      technologies: [
+        "Javascript",
+        "Css",
+        "Tailwind",
+        "React",
+        "React Query",
+        "Redux",
+        "NodeJS",
+        "ExpressJS",
+      ],
+      gitHub: (
+        <Link to={"https://github.com/JPUrenaDev/calendarApp"}>
+          <FaGithub size={40} color="red" />
+        </Link>
+      ),
+    },
   ]);
+
   const [searchParams, setSearchParams] = useSearchParams();
 
   const FilterCategory = (e) => {
